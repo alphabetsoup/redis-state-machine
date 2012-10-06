@@ -1,0 +1,15 @@
+{
+  "name": "redis-state-machine",
+  "description": "A custom state machine that stores/retrieves the state of individual modules in Redis",
+  "version": "0.0.1",
+  "author": "Laurence Davies <lsdavies@mailc.net>",
+  "private": true,
+  "main":"./lib/state.js",
+  "engines": { "node": ">= 0.6.0" },
+  "dependencies": {
+    "redis": "*",
+    "coffee-script": "*",
+    "redis-jsonify": "*",
+    "underscore": "*"
+  }
+}
