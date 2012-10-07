@@ -1,7 +1,5 @@
-module.exports.state = function() {
-
+module.exports.instantiate = function() {
   return function(req, res, next) {
-    // user ID
     if (!req.session || (req.session.userId == null)) {
       // FIXME return a ClientState 
       req.state = new ClientState(null,req.method);
